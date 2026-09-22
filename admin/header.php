@@ -19,7 +19,7 @@ header("location: http://localhost/news-110-124/admin/");
         <!-- Custom stlylesheet -->
         <link rel="stylesheet" href="../css/style.css">
     </head>
-    <body>
+    <body class="admin-body">
         <!-- HEADER -->
         <div id="header-admin">
             <!-- container -->

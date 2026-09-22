@@ -81,6 +81,7 @@
                         
                     </div><!-- /post-container -->
                 </div>
+
                 <?php include 'sidebar.php'; ?>
             </div>
         </div>

@@ -16,12 +16,12 @@ header("location: http://localhost/news-110-124/admin/post.php");
         <link rel="stylesheet" href="../css/style.css">
     </head>
 
-    <body>
+    <body class="admin-login-body">
         <div id="wrapper-admin" class="body-content">
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-4 col-md-4">
-                        <img class="logo" src="images/news.jpg">
+                        <img class="logo" src="images/news.jpg" alt="News Management System">
                         <h3 class="heading">Admin</h3>
                         <!-- Form Start -->
                         <form  action="<?php $_SERVER['PHP_SELF'] ?>" method ="POST">
