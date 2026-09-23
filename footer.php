@@ -6,10 +6,10 @@
             include "config.php";
             $query = "select * from settings";
             $sql = mysqli_query($conn,$query);
-            if(mysqli_num_rows($sql) > 0){   
-            while($rows = mysqli_fetch_assoc($sql)){
-            echo "<span>".$rows['footerdesc']."</span>";    
-            }}
+            if(mysqli_num_rows($sql) > 0){
+            $rows = mysqli_fetch_assoc($sql);
+            echo "<span>".$rows['footerdesc']."</span>";
+            }
             ?>
             </div>
         </div>

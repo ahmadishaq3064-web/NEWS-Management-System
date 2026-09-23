@@ -7,7 +7,7 @@ $query2 = "select author from post where post_id = {$post_id}";
 $sql2 = mysqli_query($conn,$query2);
 $rows2 = mysqli_fetch_assoc($sql2);
 if($_SESSION['user_id'] != $rows2['author']){
-header("location: http://localhost/news-110-124/admin/post.php");
+header("location: http://localhost/NEWS-Management-System/admin/post.php");
 }}
 ?>
 <div id="admin-content">

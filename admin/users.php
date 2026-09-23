@@ -23,6 +23,7 @@
                 $sql = mysqli_query($conn,$query);   
                 if(mysqli_num_rows($sql) > 0){ 
                 ?>
+                  <div class="table-responsive-wrap">
                   <table class="content-table">
                       <thead>
                           <th>S.No.</th>
@@ -54,6 +55,7 @@
                         <?php } ?>  
                       </tbody>
                   </table>
+                  </div>
                   <?php } 
                   $query1 = "select * from user";
                   $sql1 = mysqli_query($conn,$query1);

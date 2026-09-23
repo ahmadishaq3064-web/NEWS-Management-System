@@ -11,6 +11,7 @@ include "header.php";
                 <a class="add-new" href="add-category.php">add category</a>
             </div>
             <div class="col-md-12">
+                <div class="table-responsive-wrap">
                 <table class="content-table">
                     <thead>
                         <th>S.No.</th>
@@ -45,6 +46,7 @@ include "header.php";
                         <?php }}?>
                     </tbody>
                 </table>
+                </div>
 
                 <?php 
                 $query1 = "select * from category";

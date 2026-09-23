@@ -1,7 +1,7 @@
 <?php 
 session_start();
 if(!isset($_SESSION['username'])){
-header("location: http://localhost/news-110-124/admin/");
+header("location: http://localhost/NEWS-Management-System/admin/");
 }
 ?>
 <!DOCTYPE html>
@@ -12,6 +12,7 @@ header("location: http://localhost/news-110-124/admin/");
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>ADMIN Panel</title>
+        <link rel="icon" type="image/svg+xml" href="../images/news-logo.svg">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="../css/bootstrap.min.css" />
         <!-- Font Awesome Icon -->
@@ -19,7 +20,7 @@ header("location: http://localhost/news-110-124/admin/");
         <!-- Custom stlylesheet -->
         <link rel="stylesheet" href="../css/style.css">
     </head>
-    <body class="admin-body">
+    <body>
         <!-- HEADER -->
         <div id="header-admin">
             <!-- container -->
@@ -60,9 +61,13 @@ header("location: http://localhost/news-110-124/admin/");
                 <div class="row">
                     <div class="col-md-12">
                        <ul class="admin-menu">
+                        <li>
+                                <a href="../index.php">View Website</a>
+                            </li>
                             <li>
                                 <a href="post.php">Post</a>
                             </li>
+                            
                             <?php 
                             if($_SESSION['role'] == '1'){
                             ?>

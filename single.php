@@ -34,6 +34,7 @@
                             <img class="single-feature-image" src="admin/upload/<?php echo $rows['post_img']?>" alt=""/>
                             <p class="description">
                                <?php echo $rows['description'] ?>
+                            </p>
                         </div>
                     </div>
                     <?php }} ?>

@@ -1,5 +1,17 @@
 <?php include 'header.php'; ?>
-    <div id="main-content">
+<?php
+if(!isset($_SESSION['username'])){
+?>
+<div class="container" style="padding-top:20px; padding-bottom:10px;">
+<div class="row">
+<div class="col-md-12 text-center">
+<h2>Welcome to our website</h2>
+<p>Read the latest posts below. Register or login if you want to add a post.</p>
+</div>
+</div>
+</div>
+<?php } ?>
+<div id="main-content">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -43,7 +55,7 @@
                                             </span>
                                         </div>
                                         <p class="description">
-                                            <?php echo substr($rows['description'],0,10) ."..."  ?>
+                                            <?php echo substr($rows['description'],0,100) ."..."  ?>
                                         </p>
                                         <a class='read-more pull-right' href='single.php?id=<?php echo $rows['post_id'] ?>'>read more</a>
                                     </div>

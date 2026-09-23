@@ -1,6 +1,6 @@
 <?php include "header.php"; 
 if($_SESSION['role'] == '0'){
-header("location: http://localhost/news-110-124/admin/post.php");
+header("location: http://localhost/NEWS-Management-System/admin/post.php");
 }
 if(isset($_POST['submit'])){
 include "config.php";
@@ -11,7 +11,7 @@ $username = mysqli_real_escape_string($conn,$_POST['username']);
 $role = mysqli_real_escape_string($conn,$_POST['role']);
 $query = "update user set first_name = '{$first_name}',last_name = '{$last_name}',username = '{$username}',role = '{$role}' where user_id = {$user_id}"; 
 if(mysqli_query($conn,$query)){
-header("location: http://localhost/news-110-124/admin/users.php");
+header("location: http://localhost/NEWS-Management-System/admin/users.php");
 }
 }
 

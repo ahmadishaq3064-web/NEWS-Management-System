@@ -1,6 +1,6 @@
 <?php include "header.php";
 if($_SESSION['role'] == '0'){
-header("location: http://localhost/news-110-124/admin/post.php");
+header("location: http://localhost/NEWS-Management-System/admin/post.php");
 }
 if(isset($_POST['submit'])){
 include "config.php";
@@ -8,7 +8,7 @@ $cat_id = mysqli_real_escape_string($conn,$_POST['cat_id']);
 $cat_post = mysqli_real_escape_string($conn,$_POST['cat_name']);
 $query = "update category set category_name = '{$cat_post}' where category_id = {$cat_id}";
 if(mysqli_query($conn,$query)){
-header("location: http://localhost/news-110-124/admin/category.php");
+header("location: http://localhost/NEWS-Management-System/admin/category.php");
 }
 }
 ?>

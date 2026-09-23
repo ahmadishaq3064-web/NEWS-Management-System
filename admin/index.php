@@ -1,7 +1,7 @@
 <?php 
 session_start();
 if(isset($_SESSION['username'])){
-header("location: http://localhost/news-110-124/admin/post.php");
+header("location: http://localhost/NEWS-Management-System/admin/post.php");
 }
 ?>
 <!doctype html>
@@ -11,18 +11,19 @@ header("location: http://localhost/news-110-124/admin/post.php");
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>ADMIN | Login</title>
+        <link rel="icon" type="image/svg+xml" href="../images/news-logo.svg">
         <link rel="stylesheet" href="../css/bootstrap.min.css" />
-        <link rel="stylesheet" href="font/font-awesome-4.7.0/css/font-awesome.css">
+        <link rel="stylesheet" href="../css/font-awesome.css">
         <link rel="stylesheet" href="../css/style.css">
     </head>
 
-    <body class="admin-login-body">
+    <body>
         <div id="wrapper-admin" class="body-content">
             <div class="container">
                 <div class="row">
                     <div class="col-md-offset-4 col-md-4">
-                        <img class="logo" src="images/news.jpg" alt="News Management System">
-                        <h3 class="heading">Admin</h3>
+                        <img class="logo" src="images/news-logo.svg">
+                        <h3 class="heading">News Admin</h3>
                         <!-- Form Start -->
                         <form  action="<?php $_SERVER['PHP_SELF'] ?>" method ="POST">
                             <div class="form-group">
@@ -53,7 +54,7 @@ header("location: http://localhost/news-110-124/admin/post.php");
                         $_SESSION['username'] = $rows['username'];
                         $_SESSION['user_id'] = $rows['user_id'];
                         $_SESSION['role'] = $rows['role'];
-                        header("location: http://localhost/news-110-124/admin/post.php");
+                        header("location: http://localhost/NEWS-Management-System/admin/post.php");
                         }        
                         }
                         else{

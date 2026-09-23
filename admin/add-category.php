@@ -1,6 +1,6 @@
 <?php include "header.php"; 
 if($_SESSION['role'] == '0'){
-header("location: http://localhost/news-110-124/admin/post.php");
+header("location: http://localhost/NEWS-Management-System/admin/post.php");
 }?>
   <div id="admin-content">
       <div class="container">
@@ -17,7 +17,7 @@ header("location: http://localhost/news-110-124/admin/post.php");
                     $cat_post = mysqli_real_escape_string($conn,$_POST['cat']);
                     $query = "insert into category (category_name) values ('{$cat_post}')";
                     if(mysqli_query($conn,$query)){
-                    header("location: http://localhost/news-110-124/admin/category.php");
+                    header("location: http://localhost/NEWS-Management-System/admin/category.php");
                     }
                     }
                     ?>

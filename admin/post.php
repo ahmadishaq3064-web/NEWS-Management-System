@@ -9,6 +9,7 @@
                   <a class="add-new" href="add-post.php">add post</a>
               </div>
               <div class="col-md-12">
+                  <div class="table-responsive-wrap">
                   <table class="content-table">
                       <thead>
                           <th>S.No.</th>
@@ -69,6 +70,7 @@
                       </tbody>
                     
                   </table>
+                  </div>
                   <ul class='pagination admin-pagination'>
                 
                   <?php

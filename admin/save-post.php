@@ -33,7 +33,7 @@ $author = $_SESSION['user_id'];
 $query = "insert into post(title,description,category,post_date,author,post_img) values('{$post_title}','{$postdesc}',{$category},'{$date}',{$author},'{$new_name}');";
 $query .= "update category set post = post + 1 where category_id = {$category};";
 if(mysqli_multi_query($conn,$query) > 0){
-header("location: http://localhost/news-110-124/admin/post.php");
+header("location: http://localhost/NEWS-Management-System/admin/post.php");
 }
 }
 ?>

@@ -13,6 +13,6 @@ $query = "delete from post where post_id = {$post_id};";
 $query .= "update category set post = post-1 where category_id = {$cat_id}";
 
 if(mysqli_multi_query($conn,$query) > 0){
-header("location: http://localhost/news-110-124/admin/post.php");
+header("location: http://localhost/NEWS-Management-System/admin/post.php");
 }
 ?>

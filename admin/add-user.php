@@ -1,6 +1,6 @@
 <?php include "header.php";
 if($_SESSION['role'] == '0'){
-header("location: http://localhost/news-110-124/admin/post.php");
+header("location: http://localhost/NEWS-Management-System/admin/post.php");
 } ?>
   <div id="admin-content">
       <div class="container">
@@ -27,7 +27,7 @@ header("location: http://localhost/news-110-124/admin/post.php");
                     else{
                     $query1 = "insert into user (first_name,last_name,username,password,role) values ('{$first_name}','{$last_name}','{$user_name}','{$password}','{$role}')";
                     if(mysqli_query($conn,$query1)){
-                    header("location: http://localhost/news-110-124/admin/users.php");
+                    header("location: http://localhost/NEWS-Management-System/admin/users.php");
                     }
                     }
                     }

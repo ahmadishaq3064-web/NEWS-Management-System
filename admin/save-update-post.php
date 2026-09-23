@@ -35,7 +35,7 @@ $query .= "update category set post = post+1 where category_id = {$_POST['catego
 $query .= "update category set post = post-1 where category_id = {$_POST['old-category']};";
 }
 if(mysqli_multi_query($conn,$query)){
-header("location: http://localhost/news-110-124/admin/post.php");
+header("location: http://localhost/NEWS-Management-System/admin/post.php");
 }
 
 ?>
